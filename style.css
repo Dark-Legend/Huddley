@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(images/bg-desktop.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 81%
+}
+
+.main{
+    width: 100vw;
+    position: relative;
+    padding: 30px;
+}
+ /* ------------------ LOGO PART--------------- */
+.main .logo{
+    margin-bottom: 7%;
+}
+
+.main .logo .log{
+    position: absolute;
+    left: 50px;
+}
+ /* -----------------LOGO ENDS------------------- */
+.main .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    
+}
+/* ---------------------LEFT PART STARTS---------------------- */
+.main .content .left{
+    margin-left:25px ;
+}
+
+.main .content .left img{
+    width: 950px;
+    height: 650px;
+}
+/* ------------------RIGHT PART STARTS------------------------- */
+.main .content .right{
+    position: relative;
+    right: 350px;
+    bottom: 130px;
+}
+
+.main .content .right h1{
+    font-size: 40px;
+    color: white;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.main .content .right .para{
+    color: white;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.main .content .right a{
+    background-color: white;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 5px 10px #272727;
+    transition: all 0.3s ease-in-out;
+}
+/* -------------------------FOOTER START----------------------- */
+.footer{
+    position: absolute;
+    right: 90px;
+    bottom: -90px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.footer ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.links{
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.links:hover{
+    border: 1px solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+
+
+.main .content .right a:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+
+/* -------------------Media Query For Mobile------------------- */
+
+@media screen and (max-width: 375px) {
+
+    body{
+        background-color: hsl(257, 40%, 49%);
+        background-image: url(images/bg-mobile.svg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .main{
+        width: 100vw;
+        position: relative;
+        padding: 30px;
+    } 
+    .main .logo img{
+        width: 130px;
+        margin-left: -29px;
+    }
+    .main .logo{
+        margin-bottom: 100px;
+        margin-left: -29px;
+    }
+
+    .main .content{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        position: relative; 
+        margin-left: -29px; 
+    }
+
+    .main .content .left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+    .main .content .left img{
+        width: 330px;
+        height: 250px;
+    }
+
+    .main .content .right{
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       align-items: center;
+       position: relative;
+       left: 20px;
+       top: 30px;
+
+       width: 100%;
+       text-align: center;
+    }
+    .main .content .right h1{
+        font-size: 26px;
+    }
+    .main .content .right p{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .main .content .right a{
+        text-align: center;
+        background-color: white;
+        padding-right: 80px;
+        padding-left: 80px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        border-radius: 50px;
+        text-decoration: none;
+        box-shadow: 0 5px 10px #272727;
+        transition: all 0.3s ease-in-out;
+    }
+    .footer ul{
+        position: absolute;
+        left: -140px;
+    }
+}
